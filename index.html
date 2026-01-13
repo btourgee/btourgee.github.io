@@ -4,62 +4,281 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brian Tourgee | SaaS Sales</title>
+  <meta name="description" content="SaaS Sales | AI, DevTools, Testing Solutions, and Cloud Platforms" />
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #111;
+    :root{
+      --text:#0f172a;
+      --muted:#475569;
+      --bg:#ffffff;
+      --card:#f8fafc;
+      --border:#e2e8f0;
+      --accent:#2fbf71; /* Kelly green */
+      --accentDark:#249b5b;
+      --link:#0f172a;
     }
-    h1 { font-size: 2.6rem; margin-bottom: 0.5rem; }
-    h2 { margin-top: 3rem; }
-    p { font-size: 1.05rem; }
-    .tagline { font-size: 1.2rem; color: #444; }
-    .cta a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #111;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.55;
+    }
+
+    .wrap{
+      max-width: 920px;
+      margin: 56px auto;
+      padding: 0 22px;
+    }
+
+    header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:18px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .headline{
+      font-size: 34px;
+      margin: 0 0 8px 0;
+      letter-spacing: -0.02em;
+    }
+
+    .subheadline{
+      margin:0;
+      font-size: 16.5px;
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    .cta{
+      flex: 0 0 auto;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      margin-top: 6px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding: 12px 16px;
+      border-radius: 10px;
+      text-decoration:none;
+      font-weight: 650;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn-primary{
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 6px 18px rgba(47, 191, 113, 0.25);
+    }
+    .btn-primary:hover{ background: var(--accentDark); }
+
+    .btn-ghost{
+      background: transparent;
+      border-color: var(--border);
+      color: var(--link);
+    }
+    .btn-ghost:hover{ background: #f1f5f9; }
+
+    section{
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2{
+      font-size: 18px;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.01em;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 16px;
+    }
+
+    ul{
+      margin: 10px 0 0 0;
+      padding-left: 18px;
+    }
+    li{ margin: 8px 0; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .role{
+      margin: 0 0 6px 0;
+      font-weight: 700;
+    }
+    .role small{
+      display:block;
       font-weight: 600;
+      color: var(--muted);
+      margin-top: 2px;
     }
-    ul { padding-left: 20px; }
+
+    .contact-line{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px 18px;
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .contact-line a{
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(15,23,42,0.25);
+    }
+    .contact-line a:hover{
+      border-bottom-color: rgba(15,23,42,0.6);
+    }
+
+    footer{
+      padding: 22px 0 10px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px){
+      header{ flex-direction:column; }
+      .cta{ margin-top: 10px; }
+      .headline{ font-size: 30px; }
+    }
   </style>
 </head>
+
 <body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1 class="headline">SaaS Sales | AI, DevTools, Testing Solutions, and Cloud Platforms</h1>
+        <p class="subheadline">
+          Results-driven SaaS sales professional with a track record of closing complex enterprise deals.
+          I specialize in new business acquisition, technical discovery, and turning pilots into revenue.
+        </p>
+      </div>
 
-<h1>Brian Tourgee</h1>
-<p class="tagline">Enterprise SaaS Sales | AI, DevTools, Cloud Platforms</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:btourgee@gmail.com?subject=Brian%20Tourgee%20-%20Let%27s%20connect">Contact me</a>
+        <!-- Optional: add your LinkedIn URL below when ready -->
+        <a class="btn btn-ghost" href="#" onclick="alert('Add your LinkedIn URL in index.html'); return false;">LinkedIn</a>
+      </div>
+    </header>
 
-<div class="cta">
-  <a href="mailto:btourgee@gmail.com">Contact Me</a>
-</div>
+    <section>
+      <h2>Results</h2>
+      <div class="card">
+        <ul>
+          <li>#1 revenue-generating sales rep (Cloudmore — 2025)</li>
+          <li>#1 revenue-generating sales rep (Mavenoid — 2024)</li>
+          <li>127% quota attainment on $1M annual target — 2024</li>
+          <li>Closed 2 largest deals of new enterprise business in Mavenoid: Kohler $250K &amp; Emerson Electric $300K</li>
+          <li>Took a $50K ARR account to $750K ARR over 18 months</li>
+        </ul>
+      </div>
+    </section>
 
-<h2>About</h2>
-<p>
-Results-driven SaaS sales professional with a track record of closing complex enterprise deals.
-I specialize in new business acquisition, technical discovery, and turning pilots into revenue.
-</p>
+    <section>
+      <h2>About</h2>
+      <div class="card">
+        <p style="margin:0;">
+          I’m a net-new, hunter-focused sales professional who combines disciplined planning with high energy and a strong results mindset.
+          I’m competitive but collaborative, work closely with cross-functional teams, and take real ownership of my work.
+          I’m deeply customer-focused and naturally curious, always looking to learn and improve.
+        </p>
+      </div>
+    </section>
 
-<h2>What You Get</h2>
-<ul>
-  <li>Proven enterprise closer</li>
-  <li>100% new business hunter experience</li>
-  <li>Strong technical fluency (AI, DevTools, Cloud)</li>
-  <li>Clear discovery → POV → close motion</li>
-  <li>Curious, lifelong learner</li>
-</ul>
+    <section>
+      <h2>How I Work</h2>
+      <div class="card">
+        <ul>
+          <li>Lead with deep discovery across technical and executive stakeholders</li>
+          <li>Run disciplined, process-driven sales cycles with clear next steps</li>
+          <li>Build POVs tied to customer outcomes and measurable ROI</li>
+          <li>Partner closely with product, engineering, and customer teams</li>
+          <li>Own my number and take accountability for results</li>
+        </ul>
+      </div>
+    </section>
 
-<h2>Experience Highlights</h2>
-<ul>
-  <li><strong>Cloudmore</strong> — Senior Account Executive (Top rep 2025 YTD)</li>
-  <li><strong>Mavenoid</strong> — Senior Sales Executive (AI software)</li>
-  <li><strong>Sauce Labs</strong> — Senior Account Executive (127% to quota)</li>
-</ul>
+    <section>
+      <h2>Experience Highlights</h2>
+      <div class="grid">
+        <div class="card">
+          <p class="role">Cloudmore — Senior Account Executive
+            <small>Microsoft billing and subscription management platform</small>
+          </p>
+          <ul>
+            <li>#1 revenue-generating sales rep (2025 YTD)</li>
+            <li>100% net-new business, enterprise hunter role</li>
+            <li>Built a repeatable engagement and POV motion for complex deals</li>
+          </ul>
+        </div>
 
+        <div class="card">
+          <p class="role">Mavenoid — Senior Sales Executive
+            <small>AI agent for product support</small>
+          </p>
+          <ul>
+            <li>#1 revenue-generating sales rep (2024)</li>
+            <li>Closed the two largest new-enterprise deals of the year ($250K and $300K)</li>
+            <li>Sold AI software into technical and executive buyers</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <p class="role">Sauce Labs — Senior Account Executive
+            <small>Cloud testing and quality platform</small>
+          </p>
+          <ul>
+            <li>127% quota attainment on $1M annual target</li>
+            <li>Closed $870K+ in enterprise ARR</li>
+            <li>#1 revenue-generating rep across peer group</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p style="margin:0;">
+          If you’re looking for an experienced SaaS sales leader who consistently delivers results in complex, enterprise environments,
+          I’d welcome a conversation.
+        </p>
+
+        <div class="contact-line">
+          <span><strong>Email:</strong> <a href="mailto:btourgee@gmail.com">btourgee@gmail.com</a></span>
+          <span><strong>Phone:</strong> <a href="tel:+16033982285">(603) 398-2285</a></span>
+          <!-- Replace # with your real LinkedIn URL -->
+          <span><strong>LinkedIn:</strong> <a href="#" onclick="alert('Paste your LinkedIn URL here in index.html'); return false;">Add link</a></span>
+        </div>
+
+        <p style="margin:14px 0 0 0;">
+          <a class="btn btn-primary" href="mailto:btourgee@gmail.com?subject=Brian%20Tourgee%20-%20Let%27s%20connect">Contact me</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Brian Tourgee
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
